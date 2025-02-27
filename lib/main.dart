@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:tugas1/Screen/page_cache_image.dart';
 
 
 import 'package:tugas1/Screen/page_dua.dart';
 import 'package:tugas1/Screen/page_empat.dart';
+import 'package:tugas1/Screen/page_gambar.dart';
 import 'package:tugas1/Screen/page_satu.dart';
-import 'package:tugas1/Screen/page_tiga.dart';void main() {
+import 'package:tugas1/Screen/page_tiga.dart';
+import 'package:tugas1/Screen/page_url_image.dart';void main() {
   runApp(const MyApp());
 }
 
@@ -121,6 +124,52 @@ class PageOne extends StatelessWidget {
                 style: TextStyle(fontSize: 14, color: Colors.white ),
               ),
             ),
+
+            MaterialButton(onPressed: () {
+              // ini untuk pindah page ke Page 4
+              Navigator.push(context, MaterialPageRoute(builder: (context)
+              => PageGambar()
+              ));
+            },
+              elevation: 18.0,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+
+              color: Colors.purple,
+              child: Text('Page Gambar',
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+            ),
+
+            MaterialButton(onPressed: () {
+              // ini untuk pindah page ke Page 4
+              Navigator.push(context, MaterialPageRoute(builder: (context)
+              => PageUrlImage()
+              ));
+            },
+              elevation: 18.0,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+
+              color: Colors.red,
+              child: Text('Page Url',
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+            ),
+
+            MaterialButton(onPressed: () {
+              // ini untuk pindah page ke Page 4
+              Navigator.push(context, MaterialPageRoute(builder: (context)
+              => PageCacheImage()
+              ));
+            },
+              elevation: 18.0,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+
+              color: Colors.orange,
+              child: Text('Page Chace',
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+            ),
+
           ],
         ),
 
