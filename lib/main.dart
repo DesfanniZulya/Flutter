@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:tugas1/Screen/Page_simple_login.dart';
+import 'package:tugas1/Screen/latihan_form/page_form_dosen.dart';
+import 'package:tugas1/Screen/latihan_yummy/page_splash_screen.dart';
+import 'package:tugas1/Screen/nav_bar/page_tab_bar.dart';
 import 'package:tugas1/Screen/page_cache_image.dart';
-
-
 import 'package:tugas1/Screen/page_dua.dart';
 import 'package:tugas1/Screen/page_empat.dart';
 import 'package:tugas1/Screen/page_gambar.dart';
+import 'package:tugas1/Screen/page_list_data.dart';
+import 'package:tugas1/Screen/page_notification.dart';
 import 'package:tugas1/Screen/page_satu.dart';
 import 'package:tugas1/Screen/page_tiga.dart';
 import 'package:tugas1/Screen/page_url_image.dart';void main() {
@@ -167,6 +171,96 @@ class PageOne extends StatelessWidget {
               color: Colors.orange,
               child: Text('Page Chace',
                 style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+            ),
+
+            MaterialButton(onPressed: () {
+              // ini untuk pindah page ke Page 4
+              Navigator.push(context, MaterialPageRoute(builder: (context)
+              => PageNotification()
+              ));
+            },
+              elevation: 18.0,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+
+              color: Colors.purple,
+              child: Text('Page Notification',
+                style: TextStyle(fontSize: 14, color: Colors.white),
+              ),
+            ),
+
+            MaterialButton(onPressed: () {
+              // ini untuk pindah page ke Page 4
+              Navigator.push(context, MaterialPageRoute(builder: (context)
+              => PageListData()
+              ));
+            },
+              elevation: 18.0,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+
+              color: Colors.yellow,
+              child: Text('Page List Data',
+                style: TextStyle(fontSize: 14, color: Colors.black),
+              ),
+            ),
+
+            MaterialButton(onPressed: () {
+              // ini untuk pindah page ke Page 4
+              Navigator.push(context, MaterialPageRoute(builder: (context)
+              => PageSimpleLogin()
+              ));
+            },
+              elevation: 18.0,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+
+              color: Colors.green,
+              child: Text('Page Login',
+                style: TextStyle(fontSize: 14, color: Colors.black),
+              ),
+            ),
+
+            MaterialButton(onPressed: () {
+              // ini untuk pindah page ke Page 4
+              Navigator.push(context, MaterialPageRoute(builder: (context)
+              => PageTabBar()
+              ));
+            },
+              elevation: 18.0,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+
+              color: Colors.green,
+              child: Text('Tab Bar',
+                style: TextStyle(fontSize: 14, color: Colors.black),
+              ),
+            ),
+
+            MaterialButton(onPressed: () {
+              // ini untuk pindah page ke Page 4
+              Navigator.push(context, MaterialPageRoute(builder: (context)
+              => PageFormDosen()
+              ));
+            },
+              elevation: 18.0,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+
+              color: Colors.blue,
+              child: Text('Form Dosen',
+                style: TextStyle(fontSize: 14, color: Colors.black),
+              ),
+            ),
+
+            MaterialButton(onPressed: () {
+              // ini untuk pindah page ke Page 4
+              Navigator.push(context, MaterialPageRoute(builder: (context)
+              => SplashScreen()
+              ));
+            },
+              elevation: 18.0,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+
+              color: Colors.orange,
+              child: Text('Page Yummy',
+                style: TextStyle(fontSize: 14, color: Colors.black),
               ),
             ),
 
